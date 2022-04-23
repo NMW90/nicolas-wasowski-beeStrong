@@ -52,7 +52,7 @@
 
 /* pagina de inicio */
 .barraProductos{
-   background-image: url(../imagenes/bee-halictus-macro-pollinator.jpg);
+   background-image: url(./imagenes/bee-halictus-macro-pollinator.jpg);
    height:100vh;
    width: 100%;
    font-size: x-large;
@@ -115,7 +115,7 @@ height: 500px;
 /* hasta aca es contacto */
 
 .backgroundImg{
-   background-image: url(../imagenes/bee-halictus-macro-pollinator.jpg );
+   background-image: url(./imagenes/bee-halictus-macro-pollinator.jpg );
    height:100vh;
    width: 100%;
 }
@@ -153,7 +153,7 @@ height: 500px;
 /* hasta aca es imagen */ 
 
 .backgroundNosotros{
-   background-image: url(../imagenes/bee-halictus-macro-pollinator.jpg );
+   background-image: url(./imagenes/bee-halictus-macro-pollinator.jpg );
    height:100vh;
    width: 100%;
 
@@ -226,35 +226,35 @@ height: 500px;
  
  
  .imagen1p { grid-area: imagen1p;
-   background-image: url(../imagenes/abejas.webp);
+   background-image: url(./imagenes/abejas.webp);
    background-size: cover;
    background-position: center;
    
  }
  
  .imagen2p { grid-area: imagen2p;
-   background-image: url(../imagenes/apicultor.jpeg);
+   background-image: url(./imagenes/apicultor.jpeg);
    background-size: cover;
    background-position: center;
  
  }
  
  .imagen3p { grid-area: imagen3p;
-   background-image: url(../imagenes/apicultores.jpeg);
+   background-image: url(./imagenes/apicultores.jpeg);
    background-size: cover;
    background-position: center;
  ;
  }
  
  .imagen4p { grid-area: imagen4p;
-   background-image: url(../imagenes/colmena.jpeg);
+   background-image: url(./imagenes/colmena.jpeg);
    background-size: cover;
    background-position: center;
  
  }
  
  .imagen5p { grid-area: imagen5p;
-   background-image: url(../imagenes/marcoCria.jpeg);
+   background-image: url(./imagenes/marcoCria.jpeg);
    background-size: cover;
    background-position: center;
  }
