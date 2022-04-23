@@ -1,0 +1,314 @@
+*{
+   margin: 0;
+   padding: 0;
+
+}
+
+.logo{
+   color: rgb(0, 0, 0);
+   background-color: rgb(255, 244, 28);
+   text-decoration: none;
+   height: 100px;
+   
+   padding-top: 10px;
+   padding-left: 30px;}
+
+.textStile{
+   color: rgb(0, 0, 0);
+   text-decoration: none;
+   font-size: 50px; 
+}
+
+.aligne{
+   text-align: right;}
+
+.linkSize{
+   font-size: 25px;
+   list-style: none;
+   display: inline;
+   margin-left: 50px;
+   padding-top: 30px;
+   padding-right: 10px;
+}
+ /* hasta aca llega el encabezado que es igual para todas */
+
+
+.pie{
+   text-align: center;
+   color: rgb(0, 0, 0);
+   background-color: rgb(255, 244, 28);
+   font-size: 25px;
+   width: 100%;
+   height: 80px;
+   padding-top: 30px;
+}
+
+.right{
+   text-align: right;
+   padding-top: 10px;
+   margin-left: 20px;
+}
+     /* hasta aca llega el pie de pagina que es igual para todas */ 
+
+/* pagina de inicio */
+.barraProductos{
+   background-image: url(../imagenes/bee-halictus-macro-pollinator.jpg);
+   height:100vh;
+   width: 100%;
+   font-size: x-large;
+   color: yellow;
+}
+
+.box1{
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+height: 500px;
+
+   } 
+
+.img{
+   width: 100px;
+   height: 100px;
+   margin: 50px;
+   
+}
+/* este es el inicio */
+
+ /* aca arranca contacto */
+.backgroundCont{
+   background-image: linear-gradient(to left, black , yellow);
+   height:100vh;
+   width: 100%;
+
+}
+
+.formulario{
+   background: rgba( 255, 255, 255, 0.45 );
+   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+   backdrop-filter: blur( 10.5px );
+   -webkit-backdrop-filter: blur( 10.5px );
+   border-radius: 10px;
+   border: 1px solid rgba( 255, 255, 255, 0.18 );
+   width: 500px;
+
+   /* color: aliceblue;
+   background-image:linear-gradient(to right, rgb(0, 0, 0) , rgb(255, 247, 0));
+   display: flex;
+   flex-direction: column;
+   justify-content:center;
+   border-radius: 10px;
+   border: 10px solid burlywood;
+   height: 500px;
+   width: 500px;
+   padding-left: 50px;
+   margin-bottom: 100px; */
+}
+   
+.formBox{
+   padding-top: 100px;
+   margin-left: 200px;
+   font-size: 30px;
+}
+
+
+/* hasta aca es contacto */
+
+.backgroundImg{
+   background-image: url(../imagenes/bee-halictus-macro-pollinator.jpg );
+   height:100vh;
+   width: 100%;
+}
+.flexImg{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding-top: 100px;
+   height: 300px;
+}
+.flexImg :hover{
+   height: 500px;
+}
+#img1{
+   transition: height 4s;
+
+}
+
+.description{
+   text-align: center;
+   color: yellow;
+}
+
+/* .videoBee{
+   height: 500px;
+   margin-left:350PX;
+   margin-top: 10px; 
+
+}
+ 
+/* .descriptionVideo{
+   text-align: center;
+   color: yellow; */
+
+/* hasta aca es imagen */ 
+
+.backgroundNosotros{
+   background-image: url(../imagenes/bee-halictus-macro-pollinator.jpg );
+   height:100vh;
+   width: 100%;
+
+
+}
+
+.titleNos{
+   color: yellow;
+   font-size: xx-large;
+}
+
+.descriptionNos{
+   color: bisque;
+   font-size: x-large;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+/* hasta aca llega nosotros */
+
+/* .backgroundProductos{
+   background-image: url(../imagenes/bee-halictus-macro-pollinator.jpg );
+   height:100vh;
+   width: 100%;
+
+}
+
+.descriptionP{
+   font-size: xx-large;
+   color: aqua;
+
+}
+.imgP{
+   width:400px ;
+   height: 600px;
+   margin-left: 300px ;
+} */
+/*  hasta aca llega productos */
+.container {  display: grid;
+   grid-template-columns: 1.5fr 1.5fr 1.5fr;
+   grid-template-rows: 0.5fr 3.5fr 0.5fr;
+   gap: 0px 0px;
+   grid-auto-flow: row;
+   grid-template-areas:
+     "encabezadoProductos encabezadoProductos encabezadoProductos"
+     "cuerpoProductos cuerpoProductos cuerpoProductos"
+     "pieProductos pieProductos pieProductos";
+     height: 100vh;
+     background-color: black;
+ 
+ }
+ 
+ .encabezadoProductos { grid-area: encabezadoProductos;
+ 
+ }
+ 
+ .cuerpoProductos {  display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr 1fr;
+   gap: 0px 0px;
+   grid-auto-flow: row;
+   grid-template-areas:
+     "imagen1p . imagen2p"
+     "textop1 imagen3p textop2"
+     "imagen4p textop3 imagen5p"
+     "textop4 . textop5";
+   grid-area: cuerpoProductos;
+ 
+ }
+ 
+ 
+ .imagen1p { grid-area: imagen1p;
+   background-image: url(../imagenes/abejas.webp);
+   background-size: cover;
+   background-position: center;
+   
+ }
+ 
+ .imagen2p { grid-area: imagen2p;
+   background-image: url(../imagenes/apicultor.jpeg);
+   background-size: cover;
+   background-position: center;
+ 
+ }
+ 
+ .imagen3p { grid-area: imagen3p;
+   background-image: url(../imagenes/apicultores.jpeg);
+   background-size: cover;
+   background-position: center;
+ ;
+ }
+ 
+ .imagen4p { grid-area: imagen4p;
+   background-image: url(../imagenes/colmena.jpeg);
+   background-size: cover;
+   background-position: center;
+ 
+ }
+ 
+ .imagen5p { grid-area: imagen5p;
+   background-image: url(../imagenes/marcoCria.jpeg);
+   background-size: cover;
+   background-position: center;
+ }
+ 
+ .textop1 { grid-area: textop1;
+   background-color: rgb(243, 149, 25);
+   text-align: center;
+   font-size: 20px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   margin-left: 20px;
+   margin-right: 20px;
+ 
+ }
+ 
+ .textop2 { grid-area: textop2;
+   background-color: rgb(243, 149, 25);
+   text-align: center;
+   font-size: 20px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   margin-left: 20px;
+   margin-right: 20px;
+   
+ }
+ 
+ .textop3 { grid-area: textop3;
+   background-color: rgb(243, 149, 25);
+   text-align: center;
+   font-size: 20px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   margin-left: 20px;
+   margin-right: 20px;
+ }
+ 
+ .textop4 { grid-area: textop4;
+   background-color: rgb(243, 149, 25);
+   text-align: center;
+   font-size: 20px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   margin-left: 20px;
+   margin-right: 20px;
+ }
+ 
+ .textop5 { grid-area: textop5;
+   background-color: rgb(243, 149, 25);
+   text-align: center;
+   font-size: 20px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   margin-left: 20px;
+   margin-right: 20px;
+ }
+ 
+ .pieProductos { grid-area: pieProductos; }
